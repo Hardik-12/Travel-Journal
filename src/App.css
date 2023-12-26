@@ -1,0 +1,71 @@
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F55A5A;
+  height: 55px;
+  gap: 10px;
+}
+
+
+.navbar-text{
+  color: white;
+  font-size: 1rem;
+}
+
+
+.hero{
+  display: flex;
+  position: relative;
+  gap: 20px;
+  padding: 45px 40px;
+}
+
+
+
+.hero-location{
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  gap: 14px;
+}
+
+.map-pointer-image{
+  height: 0.6rem;
+}
+
+.hero-pointer{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-info{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 11.5rem;
+}
+
+
+.hero-name{
+  font-size: 40px;
+  margin-bottom: 8px;
+  margin-top: 1.4rem;
+}
+
+.hero-description{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  font-size: 1rem;
+}
+
+.hero-view{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-time{
+  font-weight: bold;
+}
