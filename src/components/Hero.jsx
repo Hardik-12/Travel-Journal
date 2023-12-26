@@ -1,25 +1,28 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import IMAGES from "../assets/images";
 
 
 
-export default function Hero(){
+export default function Hero(props){
     return (
-        <section className="hero">
-            <img src={IMAGES.image3} alt="hero-image" className="hero-img" />
-            <div className="hero-location">
-                <div className="hero-pointer">
-                    <img src={IMAGES.image2} alt="" className="map-pointer-image" />
-                    <span className="hero-country">JAPAN</span>
+        <div>
+            <section className="hero">
+                <img src={props.img} alt="hero-image" className="hero-img" />
+                <div className="hero-location">
+                    <div className="hero-pointer">
+                        <img src={props.pointerImg} alt="" className="map-pointer-image" />
+                        <span className="hero-country">{props.country}</span>
+                    </div>
+                    <a href='https://www.w3schools.com' className="hero-view">View on Google Maps</a>
                 </div>
-                <a href='https://www.google.com' className="hero-view">View on Google Maps</a>
-            </div>
-            <div className="hero-info">
-                <h1 className="hero-name">Mount Fuji</h1>
-                <time className="hero-time">12 Jan, 2021 - 24 Jan, 2021</time>
-                <span className="hero-description">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</span>
-            </div>
-        </section>
+                <div className="hero-info">
+                    <h1 className="hero-name">{props.title}</h1>
+                    <time className="hero-time">{props.date}</time>
+                    <span className="hero-description">{props.description}</span>
+                </div>
+            </section>
+            <hr />
+        </div>
     )
 }

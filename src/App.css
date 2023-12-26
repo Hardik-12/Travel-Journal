@@ -18,7 +18,7 @@
   display: flex;
   position: relative;
   gap: 20px;
-  padding: 45px 40px;
+  padding: 35px 40px;
 }
 
 
@@ -30,6 +30,13 @@
   gap: 14px;
 }
 
+
+.hero-country{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .map-pointer-image{
   height: 0.6rem;
 }
@@ -40,6 +47,12 @@
   gap: 6px;
 }
 
+.hero-view{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #918E9B;
+}
+
 .hero-info{
   display: flex;
   flex-direction: column;
@@ -47,25 +60,28 @@
   left: 11.5rem;
 }
 
-
 .hero-name{
   font-size: 40px;
   margin-bottom: 8px;
   margin-top: 1.4rem;
 }
 
+.hero-time{
+  font-weight: bold;
+}
+
 .hero-description{
   font-family: 'Inter', sans-serif;
   font-family: 'Poppins', sans-serif;
   max-width: 800px;
-  font-size: 1rem;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
-.hero-view{
-  text-decoration: none;
-  cursor: pointer;
+
+hr{
+  width: 95%;
+  background-color: #F5F5F5;
 }
 
-.hero-time{
-  font-weight: bold;
-}
+
